@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Request a phone repair from MULTITALENTED."><title>Phone Repairs | MULTITALENTED</title>
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/responsive.css"></head>
+<body>
+<header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html">MULTI<span>TALENTED</span></a><button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+<nav class="main-nav" id="mainNav"><a href="index.html">Home</a><a href="shop.html">Phones</a><a href="shop.html#gadgets">Gadgets</a><a class="active" href="repairs.html">Repairs</a><a href="shop.html#accessories">Accessories</a><a href="about.html">About</a><a href="contact.html">Contact</a><a class="btn btn-dark nav-cta" href="repairs.html">Book a Repair</a></nav></div></header>
+<main><section class="page-hero"><div class="container"><span class="eyebrow">REPAIRS</span><h1>Tell us what your phone needs.</h1><p>Complete the request below. Your details can be prepared for WhatsApp follow-up.</p></div></section>
+<section class="section"><div class="container form-layout"><div><span class="eyebrow">REPAIR REQUEST</span><h2>Book a repair</h2><p class="muted">This front-end form does not claim a confirmed appointment. It prepares a request for contact.</p></div>
+<form class="pro-form" id="repairForm">
+<label>Customer Name<input required name="name" autocomplete="name"></label>
+<label>Phone Number<input required name="phone" type="tel" autocomplete="tel"></label>
+<label>Device Brand<select required name="brand"><option value="">Select brand</option><option>Apple</option><option>Samsung</option><option>Tecno</option><option>Infinix</option><option>Xiaomi / Redmi</option><option>Other</option></select></label>
+<label>Device Model<input required name="model" placeholder="e.g. iPhone 13 Pro"></label>
+<label>Repair Type<select required name="repairType"><option value="">Select repair type</option><option>Screen Replacement</option><option>Battery Replacement</option><option>Charging Port</option><option>Camera Repair</option><option>Speaker/Microphone</option><option>Software Issue</option><option>Water Damage</option><option>Other</option></select></label>
+<label>Problem Description<textarea required name="problem" rows="5" placeholder="Describe the issue..."></textarea></label>
+<label>Preferred Contact Method<select name="contactMethod"><option>WhatsApp</option><option>Phone Call</option><option>SMS</option></select></label>
+<button class="btn btn-dark" type="submit">Request Repair →</button>
+<p id="repairStatus" class="form-status" role="status"></p>
+</form></div></section></main>
+<footer class="site-footer"><div class="container footer-bottom"><span>© <span id="year"></span> MULTITALENTED</span><a href="contact.html">Contact</a></div></footer>
+<script src="js/whatsapp.js"></script><script src="js/repairs.js"></script><script src="js/main.js"></script>
+</body></html>

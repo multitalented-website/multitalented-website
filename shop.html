@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Shop smartphones at MULTITALENTED. Search by brand, model, RAM, storage and price.">
+<title>Phones & Catalogue | MULTITALENTED</title>
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/responsive.css"></head>
+<body>
+<header class="site-header"><div class="container nav-wrap">
+<a class="brand" href="index.html">MULTI<span>TALENTED</span></a>
+<button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+<nav class="main-nav" id="mainNav"><a href="index.html">Home</a><a class="active" href="shop.html">Phones</a><a href="shop.html#gadgets">Gadgets</a><a href="repairs.html">Repairs</a><a href="shop.html#accessories">Accessories</a><a href="about.html">About</a><a href="contact.html">Contact</a><a class="btn btn-dark nav-cta" href="repairs.html">Book a Repair</a></nav>
+</div></header>
+<main>
+<section class="page-hero"><div class="container"><span class="eyebrow">CATALOGUE</span><h1>Find your next phone.</h1><p>Search and filter the current MULTITALENTED catalogue.</p></div></section>
+<section class="section"><div class="container">
+<div class="catalogue-layout">
+<aside class="filters">
+  <div class="filter-title"><h3>Filter</h3><button id="clearFilters" class="text-link">Clear</button></div>
+  <label>Search<input id="searchInput" type="search" placeholder="Search model or variant"></label>
+  <label>Brand<select id="brandFilter"><option value="">All brands</option></select></label>
+  <label>Model<select id="modelFilter"><option value="">All models</option></select></label>
+  <label>RAM<select id="ramFilter"><option value="">All RAM</option></select></label>
+  <label>Storage<select id="storageFilter"><option value="">All storage</option></select></label>
+  <label>Sort<select id="sortFilter"><option value="featured">Featured</option><option value="price-asc">Price: low to high</option><option value="price-desc">Price: high to low</option><option value="name">Name A–Z</option></select></label>
+</aside>
+<div class="catalogue-main">
+  <div class="catalogue-bar"><span id="resultCount">0 products</span><span class="muted">Prices shown in NGN where supplied.</span></div>
+  <div class="product-grid" id="productGrid"></div>
+  <div id="emptyState" class="empty-state hidden"><h3>No matching products</h3><p>Try clearing a filter or searching another model.</p></div>
+</div>
+</div>
+</div></section>
+
+<section class="section section-soft" id="gadgets"><div class="container">
+<span class="eyebrow">GADGETS</span><h2>Gadgets & accessories</h2>
+<p class="max-copy">The catalogue structure is ready for chargers, earbuds, power banks, watches, cases and other accessories. Add verified products to <code>js/products.js</code> when inventory is available.</p>
+</div></section>
+<section class="section" id="accessories"><div class="container">
+<span class="eyebrow">ACCESSORIES</span><h2>Built to expand.</h2>
+<p class="max-copy">No accessory products have been invented from the supplied source images. Add only real inventory and verified prices.</p>
+</div></section>
+</main>
+<div class="modal hidden" id="productModal" aria-hidden="true"><div class="modal-backdrop" data-close-modal></div><div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+<button class="modal-close" data-close-modal aria-label="Close">×</button><div id="modalContent"></div></div></div>
+<footer class="site-footer"><div class="container footer-bottom"><span>© <span id="year"></span> MULTITALENTED</span><a href="contact.html">Contact</a></div></footer>
+<script src="js/products.js"></script><script src="js/whatsapp.js"></script><script src="js/cart.js"></script><script src="js/shop.js"></script><script src="js/main.js"></script>
+</body></html>
